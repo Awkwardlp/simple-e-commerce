@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <rect width="48" height="48" rx="12" fill="#1E3A2F"/>
+  <!-- Minimalist Market Bag & Leaf -->
+  <path d="M14 20C14 18.8954 14.8954 18 16 18H32C33.1046 18 34 18.8954 34 20L35.5 33C35.5 34.6569 34.1569 36 32.5 36H15.5C13.8431 36 12.5 34.6569 12.5 33L14 20Z" stroke="#F4FBF7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M19 18V15C19 12.2386 21.2386 10 24 10C26.7614 10 29 12.2386 29 15V18" stroke="#A7D7C5" stroke-width="2" stroke-linecap="round"/>
+  <!-- Minimalist Sprout / Wheat line inside bag -->
+  <path d="M24 24V31M24 24C23 26 21 27 19.5 27M24 24C25 26 27 27 28.5 27" stroke="#A7D7C5" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

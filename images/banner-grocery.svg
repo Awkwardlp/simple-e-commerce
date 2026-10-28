@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 380" width="100%" height="100%" fill="none">
+  <!-- Subtle minimalist backdrop -->
+  <rect width="540" height="380" rx="20" fill="#F4F4F5"/>
+  <circle cx="360" cy="180" r="140" fill="#E8F3EE" opacity="0.7"/>
+  
+  <!-- Subtle floor shadow -->
+  <ellipse cx="270" cy="330" rx="200" ry="20" fill="#E4E4E7"/>
+
+  <!-- Clean Canvas Tote / Grocery Box -->
+  <rect x="140" y="150" width="260" height="170" rx="12" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="1.5"/>
+  <path d="M140 190 H400" stroke="#F4F4F5" stroke-width="2"/>
+
+  <!-- Tote Handles -->
+  <path d="M210 150 V90 C210 74 240 74 240 90 V150" stroke="#71717A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M300 150 V90 C300 74 330 74 330 90 V150" stroke="#71717A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Fresh Goods Inside -->
+  <!-- Rice pack -->
+  <rect x="160" y="100" width="55" height="110" rx="4" fill="#FAF9F6" stroke="#D4D4D8" stroke-width="1.2"/>
+  <path d="M187 130 V160" stroke="#1E3A2F" stroke-width="1.5"/>
+  <circle cx="187" cy="125" r="4" fill="#1E3A2F"/>
+
+  <!-- Cooking oil bottle -->
+  <path d="M225 90 H255 L260 180 H220 Z" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.2"/>
+  <rect x="233" y="74" width="14" height="16" fill="#D97706"/>
+
+  <!-- Fresh vegetables / leafy greens -->
+  <path d="M270 120 C270 90 310 90 310 120 C310 90 350 90 350 120 Z" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.2"/>
+  <path d="M290 120 V160 M330 120 V160" stroke="#16A34A" stroke-width="1.2"/>
+
+  <!-- Farm Eggs Carton peek -->
+  <rect x="330" y="130" width="60" height="50" rx="4" fill="#E7E5E4" stroke="#D6D3D1" stroke-width="1.2"/>
+  <ellipse cx="345" cy="128" rx="8" ry="11" fill="#EAB886"/>
+  <ellipse cx="365" cy="128" rx="8" ry="11" fill="#E2AC78"/>
+  <ellipse cx="380" cy="130" rx="6" ry="9" fill="#EAB886"/>
+
+  <!-- Front Brand Typography on Tote -->
+  <rect x="195" y="220" width="150" height="46" rx="6" fill="#FAF9F6" stroke="#E4E4E7" stroke-width="1"/>
+  <text x="270" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="800" fill="#1E3A2F" text-anchor="middle" letter-spacing="2">KELONTONG</text>
+  <text x="270" y="254" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="600" fill="#71717A" text-anchor="middle" letter-spacing="1">SEMBAKO SEGAR &amp; HARGA JUJUR</text>
+</svg>
