@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Kelontong Berkah Jaya — Sembako &amp; Kebutuhan Harian</title>
+  <meta name="description"
+    content="Toko Kelontong Berkah Jaya menyediakan kebutuhan sembako segar, beras pilihan, minyak goreng, telur, dan bumbu dapur lengkap dengan harga bersahabat dan antar langsung ke rumah.">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Informational Bar -->
+  <aside class="top-bar" aria-label="Informasi Layanan">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <span class="status-badge-inline">
+          <span class="dot-pulse" aria-hidden="true"></span>
+          <span>Gratis Ongkir</span>
+        </span>
+        <div class="top-bar-item">
+          <!-- Truck Icon -->
+          <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="1" y="3" width="15" height="13"></rect>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+          </svg>
+          <span>Bebas ongkos kirim dalam radius 3 KM (min. belanja Rp 50.000)</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-bar-item">
+          <!-- Clock Icon -->
+          <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span>06.00 &ndash; 22.00 WIB</span>
+        </div>
+        <div class="top-bar-item">
+          <!-- Phone Icon -->
+          <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+          <span>0812-3456-7890</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Navbar -->
+  <header>
+    <div class="header-container">
+      <!-- Brand Logo -->
+      <a href="#Beranda" class="brand">
+        <div class="brand-icon">
+          <!-- Custom Storefront / Leaf Bag Icon -->
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+        </div>
+        <div>
+          <h1 class="brand-title">Berkah Jaya</h1>
+          <p class="brand-subtitle">KEBUTUHAN HARIAN &amp; SEMBAKO</p>
+        </div>
+      </a>
+
+      <!-- Search Input -->
+      <div class="search-wrapper">
+        <span class="search-icon-pos" aria-hidden="true">
+          <!-- Clean Search Icon -->
+          <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </span>
+        <input type="text" id="searchInput" placeholder="Cari beras, minyak, gula, telur..." aria-label="Cari Produk">
+      </div>
+
+      <!-- Navigation -->
+      <nav class="nav-links" aria-label="Menu Utama">
+        <a href="#Beranda" class="nav-link active">Beranda</a>
+        <a href="#produk" class="nav-link">Katalog</a>
+        <a href="#PromoBundle" class="nav-link">Paket Dapur</a>
+        <a href="#Tentang" class="nav-link">Tentang</a>
+        <a href="#Kontak" class="nav-link">Kontak</a>
+      </nav>
+
+      <!-- Cart Button -->
+      <button type="button" class="btn-header-cart" id="btnOpenCart" aria-label="Buka Keranjang">
+        <!-- Clean Bag Icon -->
+        <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span>Keranjang</span>
+        <span class="cart-pill" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main>
+
+    <!-- Hero Section -->
+    <section id="Beranda" class="hero">
+      <div class="hero-left">
+        <div class="hero-meta">
+          <span class="dot-pulse" aria-hidden="true"></span>
+          <span>Buka Setiap Hari &bull; Layanan Antar Rumah</span>
+        </div>
+        <h2>Sembako Pilihan &amp; Kebutuhan Harian <span class="accent">Harga Jujur.</span></h2>
+        <p class="lead">Menyediakan beras pulen, minyak goreng kemasan, telur segar harian, hingga bumbu dapur lengkap.
+          Timbangan digital terkalibrasi, tanpa rekayasa, dan siap diantar langsung ke rumah Anda.</p>
+
+        <div class="hero-cta">
+          <a href="#produk" class="btn-primary" id="btnLihatProduk">
+            <!-- Shopping Bag Icon -->
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span>Lihat Produk</span>
+          </a>
+          <a href="https://wa.me/6281234567890?text=Halo%20Toko%20Kelontong%20Berkah%20Jaya,%20saya%20ingin%20pesan%20sembako"
+            target="_blank" rel="noopener noreferrer" class="btn-outline">
+            <!-- WhatsApp Clean Icon -->
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="#16A34A" aria-hidden="true">
+              <path
+                d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.15c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.16.11-3.37-.8-2.45-1.02-4.04-3.52-4.16-3.69-.12-.16-.99-1.32-.99-2.52 0-1.2.63-1.79.85-2.03.22-.24.49-.3.66-.3.17 0 .34 0 .49.01.16.01.37-.06.58.44.22.52.74 1.8.8 1.93.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.26-.11.5.14.24.63 1.04 1.35 1.68.93.83 1.71 1.09 1.95 1.21.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.18 1.25z" />
+            </svg>
+            <span>Pesan via WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="hero-trust-bar">
+          <div class="trust-item">
+            <span class="trust-icon-wrap">
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </span>
+            <span>100% Produk Asli</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon-wrap">
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v18M6 8l6-5 6 5M6 8l-4 8h8L6 8zm12 0l-4 8h8l-4-8z"></path>
+              </svg>
+            </span>
+            <span>Timbangan Akurat</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon-wrap">
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </span>
+            <span>Antar Cepat &bull; COD</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="images/banner-grocery.svg" alt="Komposisi belanjaan sembako dan kebutuhan harian" width="460"
+          height="320">
+      </div>
+    </section>
+
+    <!-- Highlights Strip -->
+    <section class="features-strip" aria-label="Keunggulan Layanan">
+      <div class="feature-box">
+        <div class="feature-icon-circle">
+          <!-- Tag / Price icon -->
+          <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+            <line x1="7" y1="7" x2="7.01" y2="7"></line>
+          </svg>
+        </div>
+        <div>
+          <h3 class="feature-title">Harga Tetap Bersahabat</h3>
+          <p class="feature-desc">Belanja eceran dengan kalkulasi harga agen ramah kantong.</p>
+        </div>
+      </div>
+
+      <div class="feature-box">
+        <div class="feature-icon-circle">
+          <!-- Scale icon -->
+          <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v18M6 8l6-5 6 5M6 8l-4 8h8L6 8zm12 0l-4 8h8l-4-8z"></path>
+          </svg>
+        </div>
+        <div>
+          <h3 class="feature-title">Timbangan Pas &amp; Jujur</h3>
+          <p class="feature-desc">Seluruh barang timbang menggunakan timbangan digital akurat.</p>
+        </div>
+      </div>
+
+      <div class="feature-box">
+        <div class="feature-icon-circle">
+          <!-- Truck delivery icon -->
+          <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"></rect>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+          </svg>
+        </div>
+        <div>
+          <h3 class="feature-title">Layanan Antar Kilat</h3>
+          <p class="feature-desc">Diantar kurir toko langsung ke alamat rumah dalam waktu singkat.</p>
+        </div>
+      </div>
+
+      <div class="feature-box">
+        <div class="feature-icon-circle">
+          <!-- Payment card icon -->
+          <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+            <line x1="1" y1="10" x2="23" y2="10"></line>
+          </svg>
+        </div>
+        <div>
+          <h3 class="feature-title">Pembayaran Fleksibel</h3>
+          <p class="feature-desc">Bayar tunai di tempat (COD), QRIS instan, atau transfer bank.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="produk" aria-labelledby="catalog-heading">
+      <div class="catalog-head">
+        <div class="catalog-title">
+          <h2 id="catalog-heading" style="font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em;">Katalog Produk
+            Pilihan</h2>
+          <p>Kebutuhan harian segar dengan seleksi mutu terbaik</p>
+        </div>
+      </div>
+
+      <!-- Filter Tabs & Sort Controls -->
+      <div class="filter-toolbar">
+        <div class="category-tabs" id="categoryTabs">
+          <button type="button" class="tab-btn active" data-cat="all">Semua Produk (8)</button>
+          <button type="button" class="tab-btn" data-cat="sembako">Bahan Pokok</button>
+          <button type="button" class="tab-btn" data-cat="minuman">Minuman &amp; Kopi</button>
+          <button type="button" class="tab-btn" data-cat="rumah">Kebutuhan Rumah</button>
+        </div>
+
+        <div class="sort-wrap">
+          <label for="sortSelect">Urutkan:</label>
+          <select id="sortSelect">
+            <option value="featured">Rekomendasi</option>
+            <option value="price-asc">Harga Terendah</option>
+            <option value="price-desc">Harga Tertinggi</option>
+            <option value="name-asc">Nama Produk (A-Z)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Product Grid (Clean, Non-Slop Cards) -->
+      <div class="product-grid" id="daftarProduk">
+
+        <!-- Produk 1: Beras -->
+        <article class="card-product" data-id="1" data-cat="sembako" data-name="Beras Rojolele Super 5 Kg"
+          data-price="68000">
+          <div class="card-media">
+            <img src="images/beras.svg" alt="Kemasan Beras Rojolele Super 5 Kg" width="200" height="150" loading="lazy">
+          </div>
+          <div class="card-content">
+            <div class="card-header-meta">
+              <span class="card-category">Bahan Pokok</span>
+              <span class="card-tag">Pilihan Utama</span>
+            </div>
+            <h3 class="card-title">Beras Rojolele Super 5 Kg</h3>
+            <p class="card-subtext">Beras putih pulen tanpa pemutih, wangi alami pandan, bersih dan higienis.</p>
+            <div class="card-rating">
+              <svg class="icon-star-filled" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <span>4.9 &bull; Terjual 1.400+</span>
+            </div>
+            <div class="card-pricing">
+              <span class="card-price">Rp 68.000</span>
+              <span class="card-original-price">Rp 74.000</span>
+            </div>
+            <div class="card-actions">
+              <button type="button" class="btn-add"
+                onclick="addToCart(1, 'Beras Rojolele Super 5 Kg', 68000, 'images/beras.svg')">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <span>Tambah</span>
+              </button>
+              <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Beras%20Rojolele%20Super%205Kg"
+                target="_blank" rel="noopener noreferrer" class="btn-wa-icon" aria-label="Beli via WhatsApp">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.15c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.16.11-3.37-.8-2.45-1.02-4.04-3.52-4.16-3.69-.12-.16-.99-1.32-.99-2.52 0-1.2.63-1.79.85-2.03.22-.24.49-.3.66-.3.17 0 .34 0 .49.01.16.01.37-.06.58.44.22.52.74 1.8.8 1.93.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.26-.11.5.14.24.63 1.04 1.35 1.68.93.83 1.71 1.09 1.95 1.21.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.18 1.25z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Produk 2: Minyak Goreng -->
+        <article class="card-product" data-id="2" data-cat="sembako" data-name="Minyak Goreng Sawit 2 Liter"
+          data-price="34500">
+          <div class="card-media">
+            <img src="images/minyak.svg" alt="Kemasan Minyak Goreng Sawit 2 Liter" width="200" height="150"
+              loading="lazy">
+          </div>
+          <div class="card-content">
+            <div class="card-header-meta">
+              <span class="card-category">Bahan Pokok</span>
+              <span class="card-tag">Hemat 10%</span>
+            </div>
+            <h3 class="card-title">Minyak Goreng Sawit 2 Liter</h3>
+            <p class="card-subtext">Minyak jernih 2 kali penyaringan, tahan panas, kemasan pouch tahan bocor.</p>
+            <div class="card-rating">
+              <svg class="icon-star-filled" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <span>4.9 &bull; Terjual 2.100+</span>
+            </div>
+            <div class="card-pricing">
+              <span class="card-price">Rp 34.500</span>
+              <span class="card-original-price">Rp 38.000</span>
+            </div>
+            <div class="card-actions">
+              <button type="button" class="btn-add"
+                onclick="addToCart(2, 'Minyak Goreng Sawit 2 Liter', 34500, 'images/minyak.svg')">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <span>Tambah</span>
+              </button>
+              <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Minyak%20Goreng%202L"
+                target="_blank" rel="noopener noreferrer" class="btn-wa-icon" aria-label="Beli via WhatsApp">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.15c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.16.11-3.37-.8-2.45-1.02-4.04-3.52-4.16-3.69-.12-.16-.99-1.32-.99-2.52 0-1.2.63-1.79.85-2.03.22-.24.49-.3.66-.3.17 0 .34 0 .49.01.16.01.37-.06.58.44.22.52.74 1.8.8 1.93.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.26-.11.5.14.24.63 1.04 1.35 1.68.93.83 1.71 1.09 1.95 1.21.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.18 1.25z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Produk 3: Telur Ayam Negeri -->
+        <article class="card-product" data-id="3" data-cat="sembako" data-name="Telur Ayam Negeri Segar 1 Kg"
+          data-price="27000">
+          <div class="card-media">
+            <img src="images/telur.svg" alt="Tray Telur Ayam Negeri Segar 1 Kg" width="200" height="150" loading="lazy">
+          </div>
+          <div class="card-content">
+            <div class="card-header-meta">
+              <span class="card-category">Bahan Pokok</span>
+              <span class="card-tag">Segar Harian</span>
+            </div>
+            <h3 class="card-title">Telur Ayam Negeri Segar 1 Kg</h3>
+            <p class="card-subtext">Telur baru masuk setiap pagi langsung dari kandang, cangkang bersih (15&ndash;16
+              butir).</p>
+            <div class="card-rating">
+              <svg class="icon-star-filled" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <span>4.8 &bull; Terjual 980+</span>
+            </div>
+            <div class="card-pricing">
+              <span class="card-price">Rp 27.000</span>
+              <span class="card-original-price">Rp 29.500</span>
+            </div>
+            <div class="card-actions">
+              <button type="button" class="btn-add"
+                onclick="addToCart(3, 'Telur Ayam Negeri Segar 1 Kg', 27000, 'images/telur.svg')">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <span>Tambah</span>
+              </button>
+              <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Telur%20Ayam%201Kg" target="_blank"
+                rel="noopener noreferrer" class="btn-wa-icon" aria-label="Beli via WhatsApp">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.15c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.16.11-3.37-.8-2.45-1.02-4.04-3.52-4.16-3.69-.12-.16-.99-1.32-.99-2.52 0-1.2.63-1.79.85-2.03.22-.24.49-.3.66-.3.17 0 .34 0 .49.01.16.01.37-.06.58.44.22.52.74 1.8.8 1.93.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.26-.11.5.14.24.63 1.04 1.35 1.68.93.83 1.71 1.09 1.95 1.21.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.18 1.25z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Produk 4: Gula Pasir -->
+        <article class="card-product" data-id="4" data-cat="sembako" data-name="Gula Pasir Kristal Putih 1 Kg"
+          data-price="17500">
+          <div class="card-media">
+            <img src="images/gula.svg" alt="Kemasan Gula Pasir Kristal Putih 1 Kg" width="200" height="150"
+              loading="lazy">
+          </div>
+          <div class="card-content">
+            <div class="card-header-meta">
+              <span class="card-category">Bahan Pokok</span>
+              <span class="card-tag">Kebutuhan Pokok</span>
+            </div>
+            <h3 class="card-title">Gula Pasir Kristal Putih 1 Kg</h3>
+            <p class="card-subtext">Gula kristal tebu murni, butiran bersih, manis alami untuk hidangan &amp; minuman.
+            </p>
+            <div class="card-rating">
+              <svg class="icon-star-filled" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <span>4.9 &bull; Terjual 1.800+</span>
+            </div>
+            <div class="card-pricing">
+              <span class="card-price">Rp 17.500</span>
+              <span class="card-original-price">Rp 19.000</span>
+            </div>
+            <div class="card-actions">
+              <button type="button" class="btn-add"
+                onclick="addToCart(4, 'Gula Pasir Kristal Putih 1 Kg', 17500, 'images/gula.svg')">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <span>Tambah</span>
+              </button>
+              <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Gula%20Pasir%201Kg" target="_blank"
+                rel="noopener noreferrer" class="btn-wa-icon" aria-label="Beli via WhatsApp">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.15c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.16.11-3.37-.8-2.45-1.02-4.04-3.52-4.16-3.69-.12-.16-.99-1.32-.99-2.52 0-1.2.63-1.79.85-2.03.22-.24.49-.3.66-.3.17 0 .34 0 .49.01.16.01.37-.06.58.44.22.52.74 1.8.8 1.93.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.26-.11.5.14.24.63 1.04 1.35 1.68.93.83 1.71 1.09 1.95 1.21.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.18 1.25z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Produk 5: Mi Instan -->
+        <article class="card-product" data-id="5" data-cat="sembako" data-name="Mi Goreng Spesial (Dus/40 Pcs)"
+          data-price="118000">
+          <div class="card-media">
+            <img src="images/indomie.svg" alt="Karton Mi Goreng Spesial Isi 40 Pcs" width="200" height="150"
+              loading="lazy">
+          </div>
+          <div class="card-content">
+            <div class="card-header-meta">
+              <span class="card-category">Bahan Pokok</span>
+              <span class="card-tag">Grosir Karton</span>
+            </div>
+            <h3 class="card-title">Mi Goreng Spesial (Dus 40 Pcs)</h3>
+            <p class="card-subtext">Mi instan favorit kemasan 1 karton isi 40 bungkus, stok keluarga lebih ekonomis.</p>
+            <div class="card-rating">
+              <svg class="icon-star-filled" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <span>5.0 &bull; Terjual 3.200+</span>
+            </div>
+            <div class="card-pricing">
+              <span class="card-price">Rp 118.000</span>
+              <span class="card-original-price">Rp 126.000</span>
+            </div>
+            <div class="card-actions">
+              <button type="button" class="btn-add"
+                onclick="addToCart(5, 'Mi Goreng Spesial (Dus 40 Pcs)', 118000, 'images/indomie.svg')">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <span>Tambah</span>
+              </button>
+              <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Mie%20Goreng%201%20Dus"
+                target="_blank" rel="noopener noreferrer" class="btn-wa-icon" aria-label="Beli via WhatsApp">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.15c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.16.11-3.37-.8-2.45-1.02-4.04-3.52-4.16-3.69-.12-.16-.99-1.32-.99-2.52 0-1.2.63-1.79.85-2.03.22-.24.49-.3.66-.3.17 0 .34 0 .49.01.16.01.37-.06.58.44.22.52.74 1.8.8 1.93.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.26-.11.5.14.24.63 1.04 1.35 1.68.93.83 1.71 1.09 1.95 1.21.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.18 1.25z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Produk 6: Kopi Tubruk -->
+        <article class="card-product" data-id="6" data-cat="minuman" data-name="Kopi Tubruk Robusta Gula (10 Pcs)"
+          data-price="14000">
+          <div class="card-media">
+            <img src="images/kopi.svg" alt="Pouch Kopi Tubruk Robusta Gula Renceng" width="200" height="150"
+              loading="lazy">
+          </div>
+          <div class="card-content">
+            <div class="card-header-meta">
+              <span class="card-category">Minuman &amp; Kopi</span>
+              <span class="card-tag">Renceng</span>
+            </div>
+            <h3 class="card-title">Kopi Tubruk Plus Gula (10 Pcs)</h3>
+            <p class="card-subtext">Paduan robusta mantap dengan gula tebu, kemasan renceng praktis 10 sachet.</p>
+            <div class="card-rating">
+              <svg class="icon-star-filled" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <span>4.9 &bull; Terjual 1.100+</span>
+            </div>
+            <div class="card-pricing">
+              <span class="card-price">Rp 14.000</span>
+              <span class="card-original-price">Rp 16.000</span>
+            </div>
+            <div class="card-actions">
+              <button type="button" class="btn-add"
+                onclick="addToCart(6, 'Kopi Tubruk Plus Gula (10 Pcs)', 14000, 'images/kopi.svg')">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <span>Tambah</span>
+              </button>
+              <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Kopi%20Tubruk%20Renceng"
+                target="_blank" rel="noopener noreferrer" class="btn-wa-icon" aria-label="Beli via WhatsApp">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.15c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.16.11-3.37-.8-2.45-1.02-4.04-3.52-4.16-3.69-.12-.16-.99-1.32-.99-2.52 0-1.2.63-1.79.85-2.03.22-.24.49-.3.66-.3.17 0 .34 0 .49.01.16.01.37-.06.58.44.22.52.74 1.8.8 1.93.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.26-.11.5.14.24.63 1.04 1.35 1.68.93.83 1.71 1.09 1.95 1.21.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.18 1.25z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Produk 7: Susu Kental Manis -->
+        <article class="card-product" data-id="7" data-cat="minuman" data-name="Susu Kental Manis 370g"
+          data-price="12000">
+          <div class="card-media">
+            <img src="images/susu.svg" alt="Kaleng Susu Kental Manis 370g" width="200" height="150" loading="lazy">
+          </div>
+          <div class="card-content">
+            <div class="card-header-meta">
+              <span class="card-category">Minuman &amp; Kopi</span>
+              <span class="card-tag">Best Value</span>
+            </div>
+            <h3 class="card-title">Susu Kental Manis 370g</h3>
+            <p class="card-subtext">Susu kental gurih kaya kalsium, cocok untuk pelengkap kopi, teh, dan roti bakar.</p>
+            <div class="card-rating">
+              <svg class="icon-star-filled" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <span>4.9 &bull; Terjual 750+</span>
+            </div>
+            <div class="card-pricing">
+              <span class="card-price">Rp 12.000</span>
+              <span class="card-original-price">Rp 13.500</span>
+            </div>
+            <div class="card-actions">
+              <button type="button" class="btn-add"
+                onclick="addToCart(7, 'Susu Kental Manis 370g', 12000, 'images/susu.svg')">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <span>Tambah</span>
+              </button>
+              <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Susu%20Kental%20Manis"
+                target="_blank" rel="noopener noreferrer" class="btn-wa-icon" aria-label="Beli via WhatsApp">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.15c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.16.11-3.37-.8-2.45-1.02-4.04-3.52-4.16-3.69-.12-.16-.99-1.32-.99-2.52 0-1.2.63-1.79.85-2.03.22-.24.49-.3.66-.3.17 0 .34 0 .49.01.16.01.37-.06.58.44.22.52.74 1.8.8 1.93.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.26-.11.5.14.24.63 1.04 1.35 1.68.93.83 1.71 1.09 1.95 1.21.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.18 1.25z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Produk 8: Sabun Cuci Piring -->
+        <article class="card-product" data-id="8" data-cat="rumah" data-name="Sabun Cuci Piring Nipis 700ml"
+          data-price="13500">
+          <div class="card-media">
+            <img src="images/sabun.svg" alt="Botol Sabun Cuci Piring Ekstrak Jeruk Nipis 700ml" width="200" height="150"
+              loading="lazy">
+          </div>
+          <div class="card-content">
+            <div class="card-header-meta">
+              <span class="card-category">Kebutuhan Rumah</span>
+              <span class="card-tag">Rumah Tangga</span>
+            </div>
+            <h3 class="card-title">Sabun Cuci Piring Nipis 700ml</h3>
+            <p class="card-subtext">Formula pembersih lemak membandel dengan ekstrak jeruk nipis, kesat dan wangi segar.
+            </p>
+            <div class="card-rating">
+              <svg class="icon-star-filled" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <span>4.9 &bull; Terjual 1.600+</span>
+            </div>
+            <div class="card-pricing">
+              <span class="card-price">Rp 13.500</span>
+              <span class="card-original-price">Rp 15.500</span>
+            </div>
+            <div class="card-actions">
+              <button type="button" class="btn-add"
+                onclick="addToCart(8, 'Sabun Cuci Piring Nipis 700ml', 13500, 'images/sabun.svg')">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <span>Tambah</span>
+              </button>
+              <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Sabun%20Cuci%20Piring"
+                target="_blank" rel="noopener noreferrer" class="btn-wa-icon" aria-label="Beli via WhatsApp">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.15c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.16.11-3.37-.8-2.45-1.02-4.04-3.52-4.16-3.69-.12-.16-.99-1.32-.99-2.52 0-1.2.63-1.79.85-2.03.22-.24.49-.3.66-.3.17 0 .34 0 .49.01.16.01.37-.06.58.44.22.52.74 1.8.8 1.93.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.26-.11.5.14.24.63 1.04 1.35 1.68.93.83 1.71 1.09 1.95 1.21.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.18 1.25z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Minimalist Bundle Promo Section -->
+    <section id="PromoBundle" class="promo-box" aria-label="Promo Paket Dapur Hemat">
+      <div class="promo-content">
+        <h3>Paket Dapur Bulanan Lengkap</h3>
+        <p>Paket komplit untuk kebutuhan primer dapur: Beras Rojolele 5 Kg, Minyak Goreng 2 Liter, Gula Pasir 1 Kg, dan
+          Telur Ayam Segar 1 Kg.</p>
+        <div class="promo-pills">
+          <span class="promo-pill-item">
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Bebas Ongkir 3 KM</span>
+          </span>
+          <span class="promo-pill-item">
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Bonus 2 Bks Mi Goreng</span>
+          </span>
+          <span class="promo-pill-item">
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Stok Terbatas</span>
+          </span>
+        </div>
+      </div>
+      <div class="promo-price-block">
+        <div class="promo-coret">Harga Normal: Rp 147.000</div>
+        <div class="promo-final-price">Rp 139.000</div>
+        <button type="button" class="btn-primary" onclick="addBundleToCart()">
+          <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          <span>Ambil Paket</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- About & Contact Section -->
+    <section class="info-grid" aria-label="Tentang dan Kontak Toko">
+
+      <!-- Tentang Toko -->
+      <article id="Tentang" class="info-card">
+        <h3>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <span>Tentang Toko Berkah Jaya</span>
+        </h3>
+        <p>Berdiri sejak 2012 melayani warga sekitar dengan integritas timbangan pas, kesegaran bahan pangan pokok, dan
+          harga eceran bersahabat seperti belanja langsung ke agen.</p>
+
+        <div class="meta-row-list">
+          <div class="meta-row">
+            <div class="meta-icon-badge">
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <div class="meta-text-title">Alamat Toko Fisik</div>
+              <div class="meta-text-desc">Jl. Kebon Pedes No. 45, RT 03 / RW 06 (Dekat Lapangan Warga)</div>
+            </div>
+          </div>
+
+          <div class="meta-row">
+            <div class="meta-icon-badge">
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div class="meta-text-title">Jam Layanan</div>
+              <div class="meta-text-desc">Senin &ndash; Minggu: 06.00 &ndash; 22.00 WIB (Buka Setiap Hari)</div>
+            </div>
+          </div>
+
+          <div class="meta-row">
+            <div class="meta-icon-badge">
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <div>
+              <div class="meta-text-title">Jarak Pengantaran</div>
+              <div class="meta-text-desc">Estimasi 15&ndash;30 menit untuk alamat dalam radius 3 kilometer.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Kontak & Pemesanan -->
+      <article id="Kontak" class="info-card">
+        <h3>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+          <span>Pusat Layanan &amp; Pesan Cepat</span>
+        </h3>
+        <p>Pilih kemudahan memesan kebutuhan sembako langsung melalui WhatsApp resmi kami. Kemasan rapi dan langsung
+          dikirim kurir toko.</p>
+
+        <div class="contact-action-list">
+          <a href="https://wa.me/6281234567890?text=Halo%20Toko%20Kelontong%20Berkah,%20saya%20mau%20pesan"
+            target="_blank" rel="noopener noreferrer" class="contact-btn-card">
+            <div>
+              <div class="contact-card-title">WhatsApp Resmi Toko</div>
+              <div class="contact-card-sub">0812-3456-7890 (Tanggapan Cepat)</div>
+            </div>
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+
+          <a href="tel:081234567890" class="contact-btn-card">
+            <div>
+              <div class="contact-card-title">Panggilan Telepon</div>
+              <div class="contact-card-sub">(021) 7890-1234</div>
+            </div>
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+
+          <div class="contact-btn-card">
+            <div>
+              <div class="contact-card-title">Metode Pembayaran</div>
+              <div class="contact-card-sub">COD (Tunai saat tiba), QRIS All Payment, Transfer BCA / BRI / Mandiri</div>
+            </div>
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- Slide-out Cart Drawer -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Keranjang Belanja">
+    <div class="cart-head">
+      <h4>
+        <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span>Keranjang Belanja</span>
+      </h4>
+      <button type="button" class="btn-close-drawer" id="btnCloseCart" aria-label="Tutup Keranjang">
+        <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="cart-body" id="cartItemsContainer">
+      <div class="cart-empty-view" id="cartEmptyMsg">
+        <svg class="icon-lg cart-empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <p>Keranjang belanja masih kosong.</p>
+        <p style="font-size: 0.78rem; margin-top: 4px; color: var(--text-soft);">Pilih produk sembako dari katalog di
+          samping.</p>
+      </div>
+    </div>
+
+    <div class="cart-foot">
+      <div class="subtotal-row">
+        <span class="subtotal-label">Subtotal:</span>
+        <span class="subtotal-val" id="cartTotalPrice">Rp 0</span>
+      </div>
+      <button type="button" class="btn-checkout-action" id="btnCheckoutWA" onclick="checkoutViaWhatsApp()">
+        <svg class="icon icon-sm" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.15c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.16.11-3.37-.8-2.45-1.02-4.04-3.52-4.16-3.69-.12-.16-.99-1.32-.99-2.52 0-1.2.63-1.79.85-2.03.22-.24.49-.3.66-.3.17 0 .34 0 .49.01.16.01.37-.06.58.44.22.52.74 1.8.8 1.93.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.26-.11.5.14.24.63 1.04 1.35 1.68.93.83 1.71 1.09 1.95 1.21.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.18 1.25z" />
+        </svg>
+        <span>Checkout via WhatsApp</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Clean Floating Toast Bar -->
+  <div class="toast-bar" id="toastNotice" role="alert">
+    <svg class="icon icon-sm toast-icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toastMessage">Produk ditambahkan ke keranjang</span>
+  </div>
+
+  <!-- Minimalist Clean Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h5>Berkah Jaya</h5>
+        <p>Toko sembako dan kebutuhan harian keluarga dengan komitmen kualitas pangan segar, timbangan pas, dan harga
+          jujur bersahabat.</p>
+        <p style="font-size: 0.75rem; margin-top: 14px; color: var(--text-soft);">&copy; 2026 Toko Kelontong Berkah
+          Jaya. Seluruh hak cipta dilindungi.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Kategori Sembako</h5>
+        <ul class="footer-nav-list">
+          <li><a href="#produk">Beras Pilihan</a></li>
+          <li><a href="#produk">Minyak Goreng &amp; Mentega</a></li>
+          <li><a href="#produk">Telur Segar Harian</a></li>
+          <li><a href="#produk">Gula &amp; Tepung</a></li>
+          <li><a href="#produk">Kopi, Teh &amp; Minuman</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Informasi Layanan</h5>
+        <ul class="footer-nav-list">
+          <li><a href="#Beranda">Ketentuan Bebas Ongkir</a></li>
+          <li><a href="#Tentang">Area Jangkauan Pengantaran</a></li>
+          <li><a href="#PromoBundle">Paket Dapur Bulanan</a></li>
+          <li><a href="#Kontak">Panduan Bayar di Tempat (COD)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Metode Pembayaran</h5>
+        <p>Menerima transaksi non-tunai dan uang pas di tempat:</p>
+        <div class="payment-chips">
+          <span class="payment-chip">QRIS</span>
+          <span class="payment-chip">COD Tunai</span>
+          <span class="payment-chip">BCA</span>
+          <span class="payment-chip">Mandiri</span>
+          <span class="payment-chip">BRI</span>
+          <span class="payment-chip">GoPay</span>
+          <span class="payment-chip">OVO</span>
+          <span class="payment-chip">Dana</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-base">
+      <p>© 2026 Toko Kelontong Berkah Jaya. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Clean Vanilla JavaScript Logic -->
+  <script>
+    // State Keranjang Belanja
+    let cart = [];
+
+    // Format Rupiah Standar
+    function formatRupiah(amount) {
+      return 'Rp ' + amount.toLocaleString('id-ID');
+    }
+
+    // Tampilkan Notifikasi Toast
+    function showToast(message) {
+      const toast = document.getElementById('toastNotice');
+      const toastMsg = document.getElementById('toastMessage');
+      toastMsg.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2400);
+    }
+
+    // Tambah Produk ke Keranjang
+    function addToCart(id, name, price, img) {
+      const existing = cart.find(item => item.id === id);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ id, name, price, img, qty: 1 });
+      }
+      updateCartUI();
+      showToast(`${name} ditambahkan`);
+    }
+
+    // Tambah Paket Hemat Dapur
+    function addBundleToCart() {
+      addToCart(999, 'Paket Dapur Bulanan Lengkap', 139000, 'images/banner-grocery.svg');
+      openCartDrawer();
+    }
+
+    // Ubah Jumlah Kuantitas di Keranjang
+    function updateQty(id, delta) {
+      const index = cart.findIndex(item => item.id === id);
+      if (index !== -1) {
+        cart[index].qty += delta;
+        if (cart[index].qty <= 0) {
+          cart.splice(index, 1);
+        }
+      }
+      updateCartUI();
+    }
+
+    // Render Ulang Tampilan Keranjang
+    function updateCartUI() {
+      const container = document.getElementById('cartItemsContainer');
+      const countBadge = document.getElementById('cartCount');
+      const totalDisplay = document.getElementById('cartTotalPrice');
+
+      const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
+      const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+
+      countBadge.textContent = totalItems;
+      totalDisplay.textContent = formatRupiah(totalPrice);
+
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div class="cart-empty-view">
+            <svg class="icon-lg cart-empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <p>Keranjang belanja masih kosong.</p>
+            <p style="font-size: 0.78rem; margin-top: 4px; color: var(--text-soft);">Pilih produk sembako dari katalog di samping.</p>
+          </div>
+        `;
+      } else {
+        container.innerHTML = cart.map(item => `
+          <div class="cart-item-row">
+            <img src="${item.img}" alt="${item.name}" class="cart-item-thumb">
+            <div class="cart-item-meta">
+              <div class="cart-item-name">${item.name}</div>
+              <div class="cart-item-price">${formatRupiah(item.price)}</div>
+            </div>
+            <div class="qty-control">
+              <button type="button" class="btn-qty-adj" onclick="updateQty(${item.id}, -1)" aria-label="Kurangi">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              </button>
+              <span class="qty-count">${item.qty}</span>
+              <button type="button" class="btn-qty-adj" onclick="updateQty(${item.id}, 1)" aria-label="Tambah">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              </button>
+            </div>
+          </div>
+        `).join('');
+      }
+    }
+
+    // Buka / Tutup Drawer Keranjang
+    const cartDrawer = document.getElementById('cartDrawer');
+    const cartOverlay = document.getElementById('cartOverlay');
+    const btnOpenCart = document.getElementById('btnOpenCart');
+    const btnCloseCart = document.getElementById('btnCloseCart');
+
+    function openCartDrawer() {
+      cartDrawer.classList.add('active');
+      cartOverlay.classList.add('active');
+    }
+
+    function closeCartDrawer() {
+      cartDrawer.classList.remove('active');
+      cartOverlay.classList.remove('active');
+    }
+
+    btnOpenCart.addEventListener('click', openCartDrawer);
+    btnCloseCart.addEventListener('click', closeCartDrawer);
+    cartOverlay.addEventListener('click', closeCartDrawer);
+
+    // Checkout via WhatsApp
+    function checkoutViaWhatsApp() {
+      if (cart.length === 0) {
+        alert('Keranjang belanja Anda masih kosong.');
+        return;
+      }
+
+      let orderList = 'Halo Toko Kelontong Berkah Jaya, saya ingin memesan sembako berikut:%0A%0A';
+      let total = 0;
+
+      cart.forEach((item, index) => {
+        const sub = item.price * item.qty;
+        total += sub;
+        orderList += `${index + 1}. *${item.name}* x ${item.qty} = ${formatRupiah(sub)}%0A`;
+      });
+
+      orderList += `%0A*Subtotal Belanja:* ${formatRupiah(total)}%0A`;
+      orderList += `Mohon konfirmasi ketersediaan & alamat pengiriman saya. Terima kasih.`;
+
+      const waUrl = `https://wa.me/6281234567890?text=${orderList}`;
+      window.open(waUrl, '_blank');
+    }
+
+    // Filter Kategori Tab
+    const categoryTabs = document.querySelectorAll('#categoryTabs .tab-btn');
+    const productCards = document.querySelectorAll('.product-grid .card-product');
+
+    categoryTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        categoryTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const selectedCat = tab.getAttribute('data-cat');
+        filterAndSort(selectedCat, searchInput.value.toLowerCase(), sortSelect.value);
+      });
+    });
+
+    // Pencarian Real-Time
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', () => {
+      const activeCat = document.querySelector('#categoryTabs .tab-btn.active').getAttribute('data-cat');
+      filterAndSort(activeCat, searchInput.value.toLowerCase(), sortSelect.value);
+    });
+
+    // Urutkan Produk
+    const sortSelect = document.getElementById('sortSelect');
+    sortSelect.addEventListener('change', () => {
+      const activeCat = document.querySelector('#categoryTabs .tab-btn.active').getAttribute('data-cat');
+      filterAndSort(activeCat, searchInput.value.toLowerCase(), sortSelect.value);
+    });
+
+    // Logika Gabungan Filter & Sort
+    function filterAndSort(category, query, sortMode) {
+      const grid = document.getElementById('daftarProduk');
+      const items = Array.from(productCards);
+
+      items.forEach(item => {
+        const itemCat = item.getAttribute('data-cat');
+        const itemName = item.getAttribute('data-name').toLowerCase();
+
+        const matchCat = (category === 'all' || itemCat === category);
+        const matchSearch = itemName.includes(query);
+
+        if (matchCat && matchSearch) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      const sorted = items.sort((a, b) => {
+        const priceA = parseInt(a.getAttribute('data-price'));
+        const priceB = parseInt(b.getAttribute('data-price'));
+        const nameA = a.getAttribute('data-name');
+        const nameB = b.getAttribute('data-name');
+
+        if (sortMode === 'price-asc') return priceA - priceB;
+        if (sortMode === 'price-desc') return priceB - priceA;
+        if (sortMode === 'name-asc') return nameA.localeCompare(nameB);
+        return parseInt(a.getAttribute('data-id')) - parseInt(b.getAttribute('data-id'));
+      });
+
+      sorted.forEach(item => grid.appendChild(item));
+    }
+  </script>
+</body>
+
+</html>
